@@ -1,3 +1,7 @@
+body{
+    background-color: #F5F5F5;
+}
+
 .form-title{
     display: flex;
     justify-content: center;
@@ -32,16 +36,20 @@
     justify-content: center;
 }
 .form-container{
+    
+}
+
+
+.profession{
+   margin-top: 1.5rem;
+}
+
+
+
+
+.form-main{
     padding: 50px;
 }
-
-
-.Select-Profession{
-    padding-bottom: 36px;
-}
-
-
-
 
 
 
@@ -111,11 +119,19 @@
     border-radius: 10px;
     
 }
-
-
+.sidebar{
+    display: none;
+    height: 100%;
+}
+.sidebar.active{
+    display: block;
+}
+.burger{
+    display: none;
+}
 .search-container {
     position: relative;
-    width: 559px;
+    width: 100%;
     margin: 0 auto;
 }
 .search-container input {
@@ -125,6 +141,7 @@
     border-radius: 10px;
     font-size: 13px;
     outline: none;
+    color: #616161;
 }
 .search-container button {
     position: absolute;
@@ -154,6 +171,7 @@
     background-color: #fff;
     padding: 15px 32px 15px 25px;
    align-items: center;
+   gap: 10rem;
 }
 .header h2{
     font-size: 30px;
@@ -167,7 +185,7 @@
     gap: 10px;
 }
 .app-btn-1{
-    width: 152px;
+    
     height: 50px;
     border-radius: 14px;
     display: flex;
@@ -181,7 +199,7 @@
 
 }
     .app-btn {
-        width: 152px;
+        
         height: 50px;
         border-radius: 14px;
         display: flex;
@@ -196,21 +214,24 @@
         display: flex;
         gap: 116px;
         align-items: center;
+        padding-bottom: 1rem;
     }
 
-    .box{
-        border: 1px solid #8A8A8A;
-        display: flex;
-        
-        padding: 0px 20px 0px 0px;
+    
+ .box {
+    border: 1px solid #8A8A8A;
+    display: flex;
+    padding: 0px 1rem 0px 0px;
+     margin-bottom: .2rem;
     }
+    
      .fill-color-1{
         width: 11px;
        
         border-radius: 3px;
     }
      .box p{
-        font-size: 15px;
+        font-size: 12px;
     }
 
 
@@ -224,13 +245,18 @@
     border: 1px solid #ddd;
     padding: 8px 30px 20px 10px;
     color: #616161;
+    font-size: 12px;
     }
     th {
         background-color: #f2f2f2;
     }
 
-
-
+    .table-body {
+        border: 1px solid #707070;
+        background: #fff;
+        border-radius: 20px;
+        padding: 1rem;
+    }
 
 
     .grid-container {
@@ -239,20 +265,65 @@
         grid-template-rows: auto;
         height: 100vh;
     }
-    
-    .content {
-        display: flex;
-        flex-direction: column;
-    }
-    
-   
-    
     .header {
         color: #fff;
         padding: 20px;
     }
     
-    .table {
+    .table-view {
         padding: 20px;
+        overflow: hidden;
     }
-    
+    .table-body{
+        overflow-x: auto;
+    }
+    @media (max-width: 767px) {
+        .grid-container{
+            display: block;
+        }
+        .burger{
+            display: block;
+        }
+        .app-btn-1, .app-btn{
+            width: 100%;
+            justify-content: left;
+        }
+        .form-main {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        .form-input{
+            gap: .8rem;
+        }
+        .form-title {
+            display: flex;
+            justify-content: center;
+            color: #2E2A55;
+            font-size: 17px;
+        }
+        .sidebar{
+            position: absolute;
+            width: 12rem;
+            z-index: 10;
+            display: block;
+        }
+        .sidebar.active{
+            display: none;
+        }
+        .t-title{
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        /* .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            height: 100vh;} */
+            .header{
+                gap: .5rem;
+            }
+            .header h2{
+                font-size: 18px;
+                color: #616161;
+            }
+      }

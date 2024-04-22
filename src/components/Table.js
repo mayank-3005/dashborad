@@ -1,12 +1,12 @@
 import AllButoon from "./buttonField/Button"
 const Table =() =>{
     return(
-        <div className="table">
-        <div className="table-heading p-5">
+        <div className="table-view">
+        <div className="table-heading md:p-5 mb-3 md:mb-0">
         <div className="title ">
         <h2>Application Status</h2>
         </div>
-      <div className="application-btn ">
+      <div className="grid md:grid-cols-5 gap-2">
       <div>
       <AllButoon styles={"app-btn-1 text-white text-base text-justify"} icon={<span className="app-count rounded-lg bg-white p-2 text-lime-900 font-medium ">67</span>} type= {"submit"} btnText ={<span className="ml-2">Total Applications</span>}/>
       </div>
@@ -23,7 +23,7 @@ const Table =() =>{
       </div>
         </div>
         <div className="table-body">
-          <div className="t-title p-5">
+          <div className="t-title">
           <h3 className="text-lg">Showing 10 records out of 67</h3>
           <p>Last 3 months modified data</p>
           </div>

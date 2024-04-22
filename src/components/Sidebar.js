@@ -1,9 +1,9 @@
 
 import AllButoon from "./buttonField/Button";
 import logo from "../assets/images/logo.png";
-const Sidebar = () =>{
+const Sidebar = ({ isActive }) =>{
     return(
-        <div className="sidebar shadow-lg">
+        <div className={`sidebar ${isActive ? 'sidebar shadow-lg bg-white active' : 'sidebar shadow-lg bg-white'}`} >
         <div className="logo">
         <img src={logo} alt ="logo"></img>
         </div>
