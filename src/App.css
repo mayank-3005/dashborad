@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
+.form-title{
+    display: flex;
+    justify-content: center;
+    color: #2E2A55;
+    font-size: 23px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.form-one-input{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding-bottom: 36px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scond-input{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding-bottom: 36px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-btn{
+    background-color: #E06A20;
+    width: 226px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    
+    align-items: center;
+    margin-top: 4rem;
+    justify-content: center;
+}
+.form-container{
+    padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Select-Profession{
+    padding-bottom: 36px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    max-width: 8rem;
+    margin-top: 19px;
+    margin-left: 33px;
 }
+
+
+.btn-1{
+    background-color: #E06A20;
+    width: 177px;
+    height: 50px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 45px 10px 15px;
+    align-items: center;
+    margin-top: 4rem;
+   
+}
+
+.btn-2{
+    background-color: #084826;
+    width: 177px;
+    height: 50px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 59px 10px 15px;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.btn-3{
+    
+    width: 177px;
+    height: 50px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 45px 10px 15px;
+    align-items: center;
+    margin-top: 2.5rem;
+    border: 1px solid#8A8A8A;
+}
+.btn-4{
+    width: 177px;
+    height: 50px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 72px 10px 15px;
+    align-items: center;
+    margin-top: 2.5rem;
+    border: 1px solid#8A8A8A;
+}
+.Menu-btn{
+    padding: 1px 0px 0px 6px;
+}
+
+.sidebar i{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+
+.search-container {
+    position: relative;
+    width: 559px;
+    margin: 0 auto;
+}
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 13px;
+    outline: none;
+}
+.search-container button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 3px 8px 5px 8px;
+  background-color: #084826;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+}
+.search-container button:hover {
+    background-color: #ddd;
+}
+
+.user-info i{
+    font-size: 30px;
+    color: #084826;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 32px 15px 25px;
+   align-items: center;
+}
+.header h2{
+    font-size: 30px;
+    color: #616161;
+}
+
+
+
+.application-btn{
+    display: flex;
+    gap: 10px;
+}
+.app-btn-1{
+    width: 152px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 10px 3px;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #8A8A8A;
+    background-color: #084826;
+    line-height: 1rem;
+
+}
+    .app-btn {
+        width: 152px;
+        height: 50px;
+        border-radius: 14px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px 10px 3px;
+        align-items: center;
+        margin-top: 10px;
+        border: 1px solid #8A8A8A;
+        line-height: 1.2rem;
+    }
+    .t-title {
+        display: flex;
+        gap: 116px;
+        align-items: center;
+    }
+
+    .box{
+        border: 1px solid #8A8A8A;
+        display: flex;
+        
+        padding: 0px 20px 0px 0px;
+    }
+     .fill-color-1{
+        width: 11px;
+       
+        border-radius: 3px;
+    }
+     .box p{
+        font-size: 15px;
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ECECEC;
+    }
+    th, td {
+        text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px 30px 20px 10px;
+    color: #616161;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+
+
+
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: auto;
+        height: 100vh;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+   
+    
+    .header {
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .table {
+        padding: 20px;
+    }
+    
