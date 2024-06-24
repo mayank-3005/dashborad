@@ -16,7 +16,7 @@ const Analysis =() =>{
           </div>
           <div className="title-right-content">
             <ul className="revenue-sales">
-            <li><select className="p-2 rounded">
+            <li><select className="p-2 rounded border-2 border-slate-300">
             <option>This Week</option>
             <option>2 month</option>
             <option>3 month</option>

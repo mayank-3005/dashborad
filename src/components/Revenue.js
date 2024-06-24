@@ -17,7 +17,7 @@ const Revenue = () =>{
           <ul className="revenue-sales">
           <li className="flex items-center"><span className="circle-fill-1 me-2"></span><Link>Sales</Link></li>
           <li className="flex items-center"><span className="circle-fill-2 me-2"></span> <Link>Profit</Link></li>
-          <li><select className="p-2 rounded">
+          <li><select className="p-2 rounded border-2 border-slate-300">
           <option>1 month</option>
           <option>2 month</option>
           <option>3 month</option>
@@ -39,7 +39,7 @@ const Revenue = () =>{
         </div>
         <div className="title-right-content">
           <ul className="revenue-sales">
-          <li><select className="p-2 rounded">
+          <li><select className="p-2 rounded border-2 border-slate-300">
           <option>1 month</option>
           <option>2 month</option>
           <option>3 month</option>
