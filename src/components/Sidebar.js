@@ -1,27 +1,71 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
 
-import AllButoon from "./buttonField/Button";
-import logo from "../assets/images/logo.png";
-const Sidebar = ({ isActive }) =>{
-    return(
-        <div className={`sidebar ${isActive ? 'sidebar shadow-lg bg-white active' : 'sidebar shadow-lg bg-white'}`} >
-        <div className="logo">
-        <img src={logo} alt ="logo"></img>
-        </div>
-       <div className="Menu-btn">
-       <div>
-       <AllButoon styles={"btn-1 text-white"} icon={<i className="fa-solid fa-plus text-orange-600"></i>} type= {"submit"} btnText ={"New Lead"}/>
-       </div>
-      <div>
-      <AllButoon  styles={"btn-2 text-white"} icon={<i className="fa-solid fa-table-columns text-lime-900"></i>} type= {"submit"} btnText ={"Home"}/>
-      </div> 
-      <div>
-      <AllButoon styles={"btn-3"} icon={<i className="fa-solid fa-indian-rupee-sign"></i>} type= {"submit"} btnText ={"Payouts"}/>
-      </div> 
-      <div>
-      <AllButoon styles={"btn-4"} icon={<i className="fa-solid fa-info"></i>} type= {"submit"} btnText ={"Info"}/>
+const Sidebar = ({ isActive }) => {
+  return (
+    <div className={`sidebar ${isActive ? 'sidebar-active shadow-lg bg-cyan-400' : 'sidebar-hidden shadow-lg bg-cyan-400'}`}>
+      <div className="logo">
+        <img src={logo} alt="logo" />
       </div>
-       </div>
-        </div>
-    )
+      <ul className="Menu-btn">
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-chart-simple"></i>
+            <span className="text-sm">DashBoard</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-table-cells-large"></i>
+            <span className="text-sm">Sales & CRM</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-truck"></i>
+            <span className="text-sm">Freight Forward Mgmt</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-truck"></i>
+            <span className="text-sm">Freight Forward Mgmt</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-truck"></i>
+            <span className="text-sm">Freight Forward Mgmt</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-truck"></i>
+            <span className="text-sm">Freight Forward Mgmt</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-truck"></i>
+            <span className="text-sm">Freight Forward Mgmt</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-truck"></i>
+            <span className="text-sm">Freight Forward Mgmt</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="btn-1 text-white">
+            <i className="fa-solid fa-truck"></i>
+            <span className="text-sm">Freight Forward Mgmt</span>
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
 };
+
 export default Sidebar;

@@ -8,27 +8,28 @@ const Header = ({ handleSideBar }) => {
 
   return (
     <div className="header shadow-md">
-      <div>
-        <h2>Dashboard</h2>
+      <div className="text-cyan-400">
+        <h2 >Dashboard</h2>
       </div>
       <div className="search-container">
         <input
           type="text"
-          placeholder="Search by Lead ID, Application, Company ID, Company Name, Email or Contact Number."
+          placeholder="Search here... "
           value={searchdata}
           onChange={handleChange}
         ></input>
         <button type="submit">
-          <i className="fa-solid fa-magnifying-glass text-sm"></i>
+        <i class="fa-solid fa-bell text-cyan-400"></i>
         </button>
-        
-      </div>
-      <div className="user-info">
-        <i className="fa-solid fa-user"></i>
-      </div>
-      <div className="burger" onClick={handleSideBar}>
-          <i className="fa-solid fa-bars text-black"></i>
+        <div className="burger" onClick={handleSideBar}>
+          <i className="fa-solid fa-bars text-cyan-400"></i>
         </div>
+        <div className="user-info">
+        <i className="fa-solid fa-user  text-cyan-400"></i>
+      </div>
+      
+      </div>
+      
     </div>
   );
 };

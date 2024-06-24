@@ -1,55 +1,8 @@
-body{
-    background-color: #F5F5F5;
-}
-
-.form-title{
-    display: flex;
-    justify-content: center;
-    color: #2E2A55;
-    font-size: 23px;
-}
-
-
-.form-one-input{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-    padding-bottom: 36px;
-}
-
-.scond-input{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-    padding-bottom: 36px;
-}
-
-.form-btn{
-    background-color: #E06A20;
-    width: 226px;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    
-    align-items: center;
-    margin-top: 4rem;
-    justify-content: center;
-}
-.form-container{
-    
-}
-
-
-.profession{
-   margin-top: 1.5rem;
-}
 
 
 
 
-.form-main{
-    padding: 50px;
-}
+
 
 
 
@@ -59,62 +12,27 @@ body{
     max-width: 8rem;
     margin-top: 19px;
     margin-left: 33px;
+    margin-bottom: 2rem;
 }
 
 
-.btn-1{
-    background-color: #E06A20;
-    width: 177px;
-    height: 50px;
-    border-radius: 24px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 45px 10px 15px;
-    align-items: center;
-    margin-top: 4rem;
-   
-}
 
-.btn-2{
-    background-color: #084826;
-    width: 177px;
-    height: 50px;
-    border-radius: 24px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 59px 10px 15px;
-    align-items: center;
-    margin-top: 2.5rem;
-}
-.btn-3{
-    
-    width: 177px;
-    height: 50px;
-    border-radius: 24px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 45px 10px 15px;
-    align-items: center;
-    margin-top: 2.5rem;
-    border: 1px solid#8A8A8A;
-}
-.btn-4{
-    width: 177px;
-    height: 50px;
-    border-radius: 24px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 72px 10px 15px;
-    align-items: center;
-    margin-top: 2.5rem;
-    border: 1px solid#8A8A8A;
-}
+
+
 .Menu-btn{
     padding: 1px 0px 0px 6px;
 }
 
+.Menu-btn li:hover{
+    background-color: #fff;
+   
+}
+.Menu-btn li:hover a{
+    color: rgb(34 211 238);
+}
+
+
 .sidebar i{
-    background: #fff;
     padding: 10px;
     border-radius: 10px;
     
@@ -130,9 +48,10 @@ body{
     display: none;
 }
 .search-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+   
 }
 .search-container input {
     width: 100%;
@@ -144,11 +63,11 @@ body{
     color: #616161;
 }
 .search-container button {
-    position: absolute;
+    font-size: 2rem;
     top: 4px;
     right: 4px;
     padding: 3px 8px 5px 8px;
-  background-color: #084826;
+ 
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -162,7 +81,7 @@ body{
 
 .user-info i{
     font-size: 30px;
-    color: #084826;
+    
 }
 
 .header{
@@ -175,9 +94,13 @@ body{
 }
 .header h2{
     font-size: 30px;
-    color: #616161;
+    
 }
 
+.box-title{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .application-btn{
@@ -198,70 +121,57 @@ body{
     line-height: 1rem;
 
 }
-    .app-btn {
-        
-        height: 50px;
-        border-radius: 14px;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 15px 10px 3px;
-        align-items: center;
-        margin-top: 10px;
-        border: 1px solid #8A8A8A;
-        line-height: 1.2rem;
-    }
-    .t-title {
-        display: flex;
-        gap: 116px;
-        align-items: center;
-        padding-bottom: 1rem;
-    }
-
     
  .box {
     border: 1px solid #8A8A8A;
-    display: flex;
-    padding: 0px 1rem 0px 0px;
+   
      margin-bottom: .2rem;
     }
     
-     .fill-color-1{
-        width: 11px;
-       
-        border-radius: 3px;
-    }
-     .box p{
-        font-size: 12px;
-    }
+    
 
 
     table {
         width: 100%;
         border-collapse: collapse;
-        border: 1px solid #ECECEC;
+       
     }
     th, td {
         text-align: left;
-    border: 1px solid #ddd;
+   
     padding: 8px 30px 20px 10px;
     color: #616161;
     font-size: 12px;
     }
-    th {
-        background-color: #f2f2f2;
-    }
-
+    
     .table-body {
-        border: 1px solid #707070;
-        background: #fff;
+        
+      
         border-radius: 20px;
-        padding: 1rem;
+       
+    }
+      
+    .box-container{
+        display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+   
+    
+     padding: 1.2rem;
     }
 
+    .query-list{
+        display: flex;
+        justify-content: space-between;
+    } 
 
+    .gird-content{
+        padding: 20px;
+    }
+ 
     .grid-container {
         display: grid;
-        grid-template-columns: 200px auto;
+        grid-template-columns: 1fr auto;
         grid-template-rows: auto;
         height: 100vh;
     }
@@ -271,7 +181,7 @@ body{
     }
     
     .table-view {
-        padding: 20px;
+       
         overflow: hidden;
     }
     .table-body{
@@ -327,3 +237,102 @@ body{
                 color: #616161;
             }
       }
+
+ .revenue-container{
+ display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 1rem;
+padding: 1.2rem;
+    }
+
+      .revenue-heading-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .revenue-sales{
+        display: flex;
+        gap: 1rem;
+      }
+
+      .circle-fill-1 {
+        background-color: yellow;
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+    .circle-fill-2{
+        background-color: rgb(34 211 238);
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        align-items: center;
+        border-radius: 50%;
+        vertical-align: baseline;
+    }
+
+    .analysis-container{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 1rem;
+    }
+
+
+
+.sidebar {
+    
+    width: 13rem;
+    z-index: 10;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+    top: 0; 
+    left: 0; 
+  }
+  
+  
+  .sidebar-hidden {
+    transform: translateX(-100%);
+  }
+  
+  
+  .sidebar-active {
+    transform: translateX(0);
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      height: 100%;
+    }
+
+    .box-container{
+        grid-template-columns: 1fr;
+    }
+
+    .revenue-container{
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+
+    .analysis-container{
+        grid-template-columns: 1fr;
+    }
+    .revenue-heading-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Order{
+        text-align: center;
+    }
+  }
+  
+
+    
