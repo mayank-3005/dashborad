@@ -9,7 +9,7 @@ const Header = ({ handleSideBar }) => {
   return (
     <div className="header shadow-md">
       <div className="text-cyan-400">
-        <h2 >Dashboard</h2>
+        <h2 className="font-medium">Dashboard</h2>
       </div>
       <div className="search-container">
         <input
