@@ -3,6 +3,7 @@ import SearchContainer from "./SearchBar";
 const Header = ({ handleSideBar }) => {
 
   return (
+    <>
     <div className="header bg-slate-800 display: flex; justify-between">
      <div>
      <SearchContainer/>
@@ -30,6 +31,7 @@ const Header = ({ handleSideBar }) => {
      
       
     </div>
+    </>
   );
 };
 

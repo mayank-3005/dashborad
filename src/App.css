@@ -37,10 +37,11 @@
     
     .header {
       color: #fff;
-      padding-left: 53px !important;
+      padding-left: 60px !important;
       position: fixed;
       z-index: 999;
       width: 100%;
+      justify-content: center !important;
   }
 
   .search-container {
@@ -48,9 +49,13 @@
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 5px;
-    width: 134px !important;
+    padding: 0px;
+    width: 100px !important;
     color: black;
+}
+
+.search-icon svg{
+  font-size: 1rem;
 }
 
 .query-list {
@@ -667,3 +672,6 @@ padding: 1.2rem;
   }
   
  
+
+
+  
