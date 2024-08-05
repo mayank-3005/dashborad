@@ -1,23 +1,20 @@
 import AnalysisChart from "./AnalysisChart";
-import Table from "./Table";
+import TabHeading from "./tab";
+
+
 
 const Analysis =() =>{
     return(
         <div className="analysis-container">
-          <div className="analysis-content shadow-lg p-5 bg-inherit">
-           <h2 className="font-medium Order">Order By Countries</h2>
-           <Table/>
-          </div>
-          <div className="analysis-content shadow-lg p-5">
+          <div className="analysis-content shadow-lg bg-slate-800">
           <div className="revenue-heading-content">
           <div className="revenue-title">
-          <h3 className="font-medium">Salas Analysis</h3>
-          
+          <h3 className="font-bold text-xl text-white">Activity</h3>
           </div>
           <div className="title-right-content">
             <ul className="revenue-sales">
             <li><select className="p-2 rounded border-2 border-slate-300">
-            <option>This Week</option>
+            <option>Weekly</option>
             <option>2 month</option>
             <option>3 month</option>
             </select></li>
@@ -27,6 +24,9 @@ const Analysis =() =>{
           <div className="mt-5">
           <AnalysisChart/>
           </div>
+          </div>
+          <div className="tab-heading bg-slate-800 p-4">
+           <TabHeading/>
           </div>
         </div>
     )

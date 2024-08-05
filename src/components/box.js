@@ -4,74 +4,71 @@ const Box = () =>{
     return(
 
         <div class=" box-container ">
-        <div class="grid-item gird-content shadow-md  bg-amber-50">
-        <div className="box-content">
+        <div class="grid-item gird-content shadow-md ">
+        <div className="box-content  bg-slate-800">
         <div className="box-title mb-4">
-        <h3 className="font-medium">Total Earing</h3>
-        <p>....</p>
+        <i className="fa-solid fa-wallet mb-1"></i>
+        <h3 className="font-bold text-sm text-white">Total Earing</h3>
         </div>
-        <h3 className="mb-4 font-bold">1000</h3>
         <div className="query-list">
         <div>
-        <i class="fa-solid fa-arrow-right"></i><span>18.2%</span>
+        <h2 className="font-bold  text-white text-2xl">75</h2>
         </div>
         <div className="chart">
-        <i class="fa-solid fa-chart-simple"></i>
+        <i className="fa-solid fa-arrow-up text-green-500 me-1"></i><span className="font-bold text-sm text-green-500">3%</span>
         </div>
         </div>
         </div>
         </div>
-        <div class="grid-item gird-content shadow-md bg-lime-50">
-        <div className="box-content">
+        <div class="grid-item gird-content shadow-md ">
+        <div className="box-content  bg-slate-800">
         <div className="box-title mb-4">
-        <h3 className="font-medium">Total Earing</h3>
-        <p>....</p>
+        <i className="fa-solid fa-wallet mb-1"></i>
+        <h3 className="font-bold text-sm text-white">Total Earing</h3>
         </div>
-        <h3 className="mb-4 font-bold">1000</h3>
         <div className="query-list">
         <div>
-        <i class="fa-solid fa-arrow-right"></i><span>18.2%</span>
+        <h2 className="font-bold  text-white text-2xl">75</h2>
         </div>
         <div className="chart">
-        <i class="fa-solid fa-chart-simple"></i>
+        <i className="fa-solid fa-arrow-up text-green-500 me-1"></i><span className="font-bold text-sm text-green-500">3%</span>
         </div>
         </div>
         </div>
         </div>
-        <div class="grid-item gird-content shadow-md bg-orange-100">
-        <div className="box-content">
+        <div class="grid-item gird-content shadow-md ">
+        <div className="box-content  bg-slate-800">
         <div className="box-title mb-4">
-        <h3 className="font-medium">Total Earing</h3>
-        <p>....</p>
+        <i className="fa-solid fa-wallet mb-1"></i>
+        <h3 className="font-bold text-sm text-white">Total Earing</h3>
         </div>
-        <h3 className="mb-4 font-bold">1000</h3>
         <div className="query-list">
         <div>
-        <i class="fa-solid fa-arrow-right"></i><span>18.2%</span>
+        <h2 className="font-bold  text-white text-2xl">75</h2>
         </div>
         <div className="chart">
-        <i class="fa-solid fa-chart-simple"></i>
+        <i className="fa-solid fa-arrow-up text-green-500 me-1"></i><span className="font-bold text-sm text-green-500">3%</span>
         </div>
         </div>
         </div>
         </div>
-        <div class="grid-item gird-content shadow-md bg-fuchsia-50">
-        <div className="box-content">
+        <div class="grid-item gird-content shadow-md ">
+        <div className="box-content  bg-slate-800">
         <div className="box-title mb-4">
-        <h3 className="font-medium">Total Earing</h3>
-        <p>....</p>
+        <i className="fa-solid fa-wallet mb-1"></i>
+        <h3 className="font-bold text-sm text-white">Total Earing</h3>
         </div>
-        <h3 className="mb-4 font-bold">1000</h3>
         <div className="query-list">
         <div>
-        <i class="fa-solid fa-arrow-right"></i><span>18.2%</span>
+        <h2 className="font-bold  text-white text-2xl">75</h2>
         </div>
         <div className="chart">
-        <i class="fa-solid fa-chart-simple"></i>
+        <i className="fa-solid fa-arrow-up text-green-500 me-1"></i><span className="font-bold text-sm text-green-500">3%</span>
         </div>
         </div>
         </div>
         </div>
+       
         
        
         

@@ -1,70 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+
 
 const Sidebar = ({ isActive }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className={`sidebar ${isActive ? 'sidebar-active shadow-lg bg-cyan-400' : 'sidebar-hidden shadow-lg bg-cyan-400'}`}>
-      <div className="logo">
-        <img src={logo} alt="logo" />
+    <>
+      <button className="toggle-button" onClick={toggleSidebar}>
+        <i className="fa-solid fa-bars"></i>
+      </button>
+      <div className={`bg-slate-800 sidebar ${isOpen ? 'open' : ''}`}>
+        <div className="logo">
+          <i className="fa-solid fa-border-all"></i>
+        </div>
+        <ul className="Menu-btn">
+          <li>
+            <Link to="/" className="btn-1 text-white">
+              <i className="fa-solid fa-house"></i>
+              <span className="text-sm"></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="btn-1 text-white">
+              <i className="fa-solid fa-chart-simple"></i>
+              <span className="text-sm"></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="btn-1 text-white">
+              <i className="fa-solid fa-file"></i>
+              <span className="text-sm"></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="btn-1 text-white">
+              <i className="fa-solid fa-truck"></i>
+              <span className="text-sm"></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="btn-1 text-white">
+              <i className="fa-solid fa-user"></i>
+              <span className="text-sm"></span>
+            </Link>
+          </li>
+        </ul>
       </div>
-      <ul className="Menu-btn">
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-chart-simple"></i>
-            <span className="text-sm">DashBoard</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-table-cells-large"></i>
-            <span className="text-sm">Sales & CRM</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-truck"></i>
-            <span className="text-sm">Freight Forward Mgmt</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-truck"></i>
-            <span className="text-sm">Freight Forward Mgmt</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-truck"></i>
-            <span className="text-sm">Freight Forward Mgmt</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-truck"></i>
-            <span className="text-sm">Freight Forward Mgmt</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-truck"></i>
-            <span className="text-sm">Freight Forward Mgmt</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-truck"></i>
-            <span className="text-sm">Freight Forward Mgmt</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="btn-1 text-white">
-            <i className="fa-solid fa-truck"></i>
-            <span className="text-sm">Freight Forward Mgmt</span>
-          </Link>
-        </li>
-      </ul>
-    </div>
+    </>
   );
 };
 

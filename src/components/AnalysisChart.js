@@ -17,7 +17,7 @@ const AnalysisChart = () => {
           offsetY: 0,
           style: {
             color: '#fff',
-            background: '#775DD0',
+            background: 'gray',
           },
           text: 'Bananas are good',
         }
@@ -41,7 +41,7 @@ const AnalysisChart = () => {
     },
     grid: {
       row: {
-        colors: ['#fff', '#f2f2f2']
+        colors: ['#fff', '#ffff']
       }
     },
     xaxis: {
@@ -76,7 +76,7 @@ const AnalysisChart = () => {
   return (
     <div>
       <div id="chart">
-        <ReactApexChart options={options} series={series} type="bar" height={350} />
+        <ReactApexChart options={options} series={series} type="bar" height={200} />
       </div>
       <div id="html-dist"></div>
     </div>

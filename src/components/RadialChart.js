@@ -1,48 +1,61 @@
-import React, { useState } from 'react';
-import ReactApexChart from 'react-apexcharts';
+import React from 'react';
+import Chart from 'react-apexcharts';
 
 const RadialChart = () => {
-  const [series] = useState([44, 55, 67, 83]);
-
-  const [options] = useState({
-    chart: {
-      height: 350,
-      type: 'radialBar',
-      
-    },
+  const options = {
+    colors: ["#857EFF"],
     plotOptions: {
       radialBar: {
+        hollow: {
+          margin: 0,
+          size: "50%",
+          background: "#293450"
+        },
+        track: {
+          dropShadow: {
+            enabled: true,
+            top: 2,
+            left: 0,
+            blur: 4,
+            opacity: 0.15,
+          }
+        },
         dataLabels: {
           name: {
-            fontSize: '22px',
+            offsetY: -10,
+            color: "#fff",
+            fontSize: "10px"
           },
           value: {
-            fontSize: '16px',
-          },
-          total: {
-            show: true,
-            label: 'Total',
-            formatter: function (w) {
-              // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
-              return 249;
-            },
-          },
-        },
-      },
+            color: "#fff",
+            fontSize: "12px",
+            show: true
+          }
+        }
+      }
     },
-    labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
-  });
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "dark",
+        type: "vertical",
+        gradientToColors: ["#05E996"],
+        stops: [0, 100]
+      }
+    },
+    stroke: {
+      lineCap: "round"
+    },
+    labels: ["Progress"]
+  };
+
+  const series = [70]; // Example progress value
 
   return (
     <div>
-      <div id="chart">
-        <ReactApexChart options={options} series={series} type="radialBar" height={500} />
-      </div>
-      <div id="html-dist"></div>
+      <Chart options={options} series={series} type="radialBar" height="161.9" width={200} />
     </div>
   );
 };
 
 export default RadialChart;
-
-

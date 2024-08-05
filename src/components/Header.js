@@ -1,34 +1,33 @@
-import { useState } from "react";
+import user from '../assets/images/images.jpeg'
+import SearchContainer from "./SearchBar";
 const Header = ({ handleSideBar }) => {
-  const [searchdata, setSearchData] = useState("");
-
-  const handleChange = (e) => {
-    setSearchData(e.target.value);
-  };
 
   return (
-    <div className="header shadow-md">
-      <div className="text-cyan-400">
-        <h2 className="font-medium">Dashboard</h2>
+    <div className="header bg-slate-800 display: flex; justify-between">
+     <div>
+     <SearchContainer/>
+     </div>
+      <div className="user">
+      <div>
+      <i className="fa-solid fa-envelope"></i>
       </div>
-      <div className="search-container">
-        <input
-          type="text"
-          placeholder="Search here... "
-          value={searchdata}
-          onChange={handleChange}
-        ></input>
-        <button type="submit">
-        <i class="fa-solid fa-bell text-cyan-400"></i>
-        </button>
-        <div className="burger" onClick={handleSideBar}>
-          <i className="fa-solid fa-bars text-cyan-400"></i>
-        </div>
-        <div className="user-info">
-        <i className="fa-solid fa-user  text-cyan-400"></i>
+      <div>
+      <i className="fa-solid fa-gear"></i>
+      </div>
+      <div>
+      <i className="fa-regular fa-bell"></i>
+      </div>
+      <div>
+      <img src={user} alt='user' height={30} width={30} className='rounded-xl'></img>
+      </div>
       </div>
       
-      </div>
+      
+      
+
+    
+
+     
       
     </div>
   );
