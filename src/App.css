@@ -41,7 +41,7 @@
       position: fixed;
       z-index: 999;
       width: 100%;
-      justify-content: center !important;
+      justify-content: space-between !important;
   }
 
   .search-container {
